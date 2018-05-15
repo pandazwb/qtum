@@ -44,7 +44,7 @@ const ContractEnvironment& x86ContractVM::getEnv() {
 
 bool x86ContractVM::execute(ContractOutput &output, ContractExecutionResult &result, bool commit)
 {
-    if(output.OpCreate) {
+    if(true || output.OpCreate) { //temporarily enable opcall
         const uint8_t *code;
         const uint8_t *data;
         const uint8_t *options;
