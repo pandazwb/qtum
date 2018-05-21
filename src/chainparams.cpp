@@ -190,7 +190,7 @@ public:
         consensus.powLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.posLimit = uint256S("0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 16 * 60; // 16 minutes
-        consensus.nPowTargetSpacing = 1 * 16;
+        consensus.nPowTargetSpacing = 2 * 16;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = true;
         consensus.fPoSNoRetargeting = false;
@@ -261,7 +261,7 @@ public:
             //0.0132
         };
 
-        consensus.nLastPOWBlock = 500;
+        consensus.nLastPOWBlock = 600;
         consensus.nMPoSRewardRecipients = 10;
         consensus.nFirstMPoSBlock = consensus.nLastPOWBlock + 
                                     consensus.nMPoSRewardRecipients + 
